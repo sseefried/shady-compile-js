@@ -1,0 +1,31 @@
+Name:                shady-compile-js
+Version:             0.0.1
+Cabal-Version:       >= 1.6
+Synopsis:            Compile the Shady language to JavaScript
+Category:            Language, GPU, Javascript
+Description:
+  Compile the Shady language to JavaScript.
+
+  GNU AGPLv3 license (see COPYING). This license is a place-holder.
+  Let me know if you'd like other terms.
+Author:              Sean Seefried
+Maintainer:          sean.seefried@gmail.com
+Homepage:            https://github.com/sseefried/shady-compile-js.git
+Copyright:           (c) by Sean Seefried 2012
+License:             OtherLicense
+License-File:        COPYING
+Stability:           experimental
+build-type:          Simple
+Source-Repository head
+    type:         git
+    location:     https://github.com/sseefried/shady-compile-js.git
+
+Library
+  hs-Source-Dirs:      src
+  Build-Depends:       base >=4 && < 5,
+                       js-good-parts >= 0.0.3,
+                       shady-gen >= 0.6
+
+  Exposed-Modules:    Shady.Compile.JavaScript
+  Other-Modules:
+
